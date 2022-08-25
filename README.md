@@ -1,47 +1,49 @@
-![Netlify examples](netlify-badge-examples.png)
+# vscode-portfolio
+[![Open is Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/itsnitinr/vscode-portfolio)
 
-# Netlify Feature Tour
+A Visual Studio Code themed developer portfolio website built with Next.js and deployed on Vercel.
 
-**Access this demo site**: https://feature-tour.netlify.app
+![vscode-portfolio banner](https://imgur.com/JXJ9mpO.gif)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fad6792e-1c44-44db-bd79-ea74b42b0f89/deploy-status)](https://app.netlify.com/sites/feature-tour/deploys)
+## Features Roadmap
 
-## About this example site
+- [ ] Themes and customizations
+  - [x] GitHub Dark (default)
+  - [ ] One Dark Pro
+  - [x] Dracula
+  - [x] Ayu
+  - [x] Nord
+- [ ] Interactive custom terminal
 
-This site provides a path to get started learning about Netlify features.
+For other features and themes suggestions, please open an issue.
 
-- 📚 [Docs Getting Started Tutorial](https://docs.netlify.com/get-started/?utm_medium=social&utm_source=github&utm_campaign=devex-ph&utm_content=devex-examples)
+## Environment Variables
 
-## Speedily deploy your own version
+For fetching your articles from dev.to, create an `.env.local` file inside the project directory. Check the `.env.local.example` file for more information.
 
-Deploy your own version of this example site by selecting the Deploy to Netlify Button below. This will automatically:
+## Running Development Server
 
-- Clone a copy of this repo to your own GitHub account
-- Create a new project in your [Netlify account](https://app.netlify.com/?utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples), linked to your new repo
-- Create an automated deployment pipeline to watch for changes on your repo
-- Build and deploy your new site
-
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-feature-tour&utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples)
-
-## Install and run this example locally
-
-You can clone this example repo to explore its features and implementation and to run it locally.
-
-```shell
-
-# 1. Clone the repository to your local development environment
-git clone git@github.com:netlify/feature-tour.git
-
-# 2. Move into the project directory
-cd feature-tour
-
-# 3. Install code dependencies
-npm install
-
-# 4. Install the Netlify CLI to let you locally serve your site using Netlify's features
-npm install -g netlify-cli
-
-# 5. Serve your site using Netlify Dev
-netlify dev
-
+```bash
+npm run dev
+# or
+yarn dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+All VSCode related components can be found in the `components` folder. To change the content of the portfolio, check out the `pages` folder. To add or remove pages, modify `components/Sidebar.jsx` and `components/Tabsbar.jsx`.
+
+## Next.js Resources
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
